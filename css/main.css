@@ -67,7 +67,7 @@ img {
 .navbar .links ul a {
   margin: 0 15px;
   color: #333;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
 }
 .navbar .divider {
@@ -89,6 +89,7 @@ img {
   background-color: #000;
   display: inline-block;
   margin: 3px 0;
+  border-radius: 20px;
 }
 .navbar .divider span:nth-child(1) {
   width: 30px;
@@ -170,11 +171,16 @@ img {
 .errorNotFound .img {
   height: 100%;
 }
-.errorNotFound .img img {
-}
+
 @media (max-width: 768px) {
   .errorNotFound .img {
     display: none;
+  }
+  .errorNotFound .card {
+    justify-content: center;
+  }
+  .errorNotFound .text {
+    text-align: center;
   }
 }
 /* End Landing */
