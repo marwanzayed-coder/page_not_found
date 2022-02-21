@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Page Not Found</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="card">
+        <div class="logo"><a href="#">Logo</a></div>
+        <div class="links">
+          <ul id="link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="divider" id="divider">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <section class="errorNotFound">
+      <div class="card">
+        <div class="text">
+          <h1>Ooops...</h1>
+          <h2>Page Not Found</h2>
+          <p>
+            The Page You Are Looking For Doesn't Exist <br />
+            Or Other Error Occurred, Go Back To Hame Page.
+          </p>
+          <button>Go Back</button>
+        </div>
+        <div class="img">
+          <img src="images/13.png" />
+        </div>
+      </div>
+    </section>
+    <script>
+      if (window.innerWidth > 768) {
+        let ul = document.getElementById("link"),
+          divider = document.getElementById("divider");
+        divider.onclick = () => {
+          divider.classList.toggle("open");
+          if (divider.classList.contains("open") === true) {
+            ul.style.display = "flex";
+          } else {
+            ul.style.display = "none";
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
